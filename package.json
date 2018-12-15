@@ -1,0 +1,42 @@
+{
+  "name": "vue-ssr",
+  "version": "1.0.0",
+  "description": "vue server side render app",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "vue": "^2.5.21",
+    "vue-server-renderer": "^2.5.21",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.0.1",
+    "json-loader": "^0.5.7",
+    "mini-css-extract-plugin": "^0.5.0",
+    "postcss-loader": "^3.0.0",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.4.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.1.5",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "dev": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranrantu/vue-ssr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranrantu/vue-ssr/issues"
+  },
+  "homepage": "https://github.com/ranrantu/vue-ssr#readme"
+}
