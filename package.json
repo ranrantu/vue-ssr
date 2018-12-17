@@ -27,7 +27,8 @@
     "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
-    "dev": "node server/server.js"
+    "dev": "node server/server.js",
+    "start": "cross-env NODE_ENV=production node server"
   },
   "repository": {
     "type": "git",

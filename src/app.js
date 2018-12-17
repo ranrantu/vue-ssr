@@ -5,6 +5,20 @@ import { createStore } from './store';
 import { sync } from 'vuex-router-sync';
 
 export function createApp () {
+	Vue.mixin({
+		beforeRouteUpdate (to, from, next) {
+			const { asyncData } = this.$options;
+			if (asyncData) {
+				asyncData({
+					store: this.$store,
+					route: to
+				}).then(next).catch(next);
+			} else {
+				next();
+			}
+		}
+	});
+
 	// create router instance
 	const router = createRouter();
 	const store = createStore();
